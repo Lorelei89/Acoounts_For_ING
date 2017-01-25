@@ -1,26 +1,206 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sEb-sd-lQh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LT_21140.ttf">
+            <string>DeuBaUnivers-Light</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Donut View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DonutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="DonutViewController" customModule="Acoounts_For_ING" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" restorationIdentifier="DonutViewController" id="OCZ-LQ-uHB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eAb-x8-M8q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024.8" y="35.532233883058474"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="pCz-Z3-gad">
+            <objects>
+                <viewController storyboardIdentifier="TableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hsh-w5-fSW" customClass="TableViewController" customModule="Acoounts_For_ING" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IJi-w8-Wat"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHO-oj-YeQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m2Z-J1-Nen">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ki-4k-cQK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AccountTableViewCell" rowHeight="80" id="A8K-NP-u9l" customClass="AccountTableViewCell" customModule="Acoounts_For_ING" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A8K-NP-u9l" id="oFx-Qv-dDA">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="account  name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-ui-EgO">
+                                                    <rect key="frame" x="60" y="8" width="274" height="20"/>
+                                                    <fontDescription key="fontDescription" name="DeuBaUnivers-Light" family="DeuBa Univers 330 Light" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+812.563.500,00 €" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJJ-os-Bds">
+                                                    <rect key="frame" x="60" y="30" width="272" height="20"/>
+                                                    <fontDescription key="fontDescription" name="DeuBaUnivers-Light" family="DeuBa Univers 330 Light" pointSize="17"/>
+                                                    <color key="textColor" red="0.45018517969999999" green="1" blue="0.03073635697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,00€ inkl. Vormerkposten" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fG-RE-4Ci">
+                                                    <rect key="frame" x="60" y="52" width="178.5" height="17"/>
+                                                    <fontDescription key="fontDescription" name="DeuBaUnivers-Light" family="DeuBa Univers 330 Light" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdp-oW-H0R" userLabel="Separator Line">
+                                                    <rect key="frame" x="10" y="79" width="322" height="1"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="NUY-LY-sy8"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_list_db-konto" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-cQ-Syb">
+                                                    <rect key="frame" x="8" y="32" width="16" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="49" id="Ge4-ZF-QD9"/>
+                                                        <constraint firstAttribute="height" constant="45" id="o01-kU-12a"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="o01-kU-12a"/>
+                                                            <exclude reference="Ge4-ZF-QD9"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1fG-RE-4Ci" firstAttribute="leading" secondItem="0m5-ui-EgO" secondAttribute="leading" id="0CM-Ay-1An"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0m5-ui-EgO" secondAttribute="trailing" id="2DL-td-rHP"/>
+                                                <constraint firstAttribute="trailing" secondItem="fdp-oW-H0R" secondAttribute="trailing" constant="10" id="2PX-t8-qFB"/>
+                                                <constraint firstItem="fd3-cQ-Syb" firstAttribute="leading" secondItem="oFx-Qv-dDA" secondAttribute="leading" constant="8" id="3Gn-E3-iMq"/>
+                                                <constraint firstItem="HJJ-os-Bds" firstAttribute="top" secondItem="0m5-ui-EgO" secondAttribute="bottom" constant="2" id="3XP-ac-DXo"/>
+                                                <constraint firstItem="1fG-RE-4Ci" firstAttribute="top" secondItem="HJJ-os-Bds" secondAttribute="bottom" constant="2" id="EWX-RB-at3"/>
+                                                <constraint firstItem="fd3-cQ-Syb" firstAttribute="centerY" secondItem="oFx-Qv-dDA" secondAttribute="centerY" id="Psp-n9-4DS"/>
+                                                <constraint firstAttribute="trailing" secondItem="HJJ-os-Bds" secondAttribute="trailing" constant="10" id="TJO-97-9bl"/>
+                                                <constraint firstItem="1fG-RE-4Ci" firstAttribute="leading" secondItem="HJJ-os-Bds" secondAttribute="leading" id="WUI-TW-d6S"/>
+                                                <constraint firstItem="0m5-ui-EgO" firstAttribute="leading" secondItem="oFx-Qv-dDA" secondAttribute="leading" constant="60" id="WkZ-GU-dU9"/>
+                                                <constraint firstItem="HJJ-os-Bds" firstAttribute="leading" secondItem="0m5-ui-EgO" secondAttribute="leading" id="cSs-OV-mwp"/>
+                                                <constraint firstAttribute="bottom" secondItem="fdp-oW-H0R" secondAttribute="bottom" id="cbf-y1-VIb"/>
+                                                <constraint firstItem="0m5-ui-EgO" firstAttribute="top" secondItem="oFx-Qv-dDA" secondAttribute="top" constant="8" id="dfN-vp-x87"/>
+                                                <constraint firstItem="fdp-oW-H0R" firstAttribute="leading" secondItem="oFx-Qv-dDA" secondAttribute="leading" constant="10" id="ury-hi-ajZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration" label="Konto mit Vormerkposten">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="accountBalance" destination="HJJ-os-Bds" id="YJU-UR-Mi9"/>
+                                            <outlet property="accountIban" destination="1fG-RE-4Ci" id="YYn-lS-WO1"/>
+                                            <outlet property="accountImage" destination="fd3-cQ-Syb" id="9VO-6M-bc4"/>
+                                            <outlet property="accountName" destination="0m5-ui-EgO" id="lvB-gw-8Mo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="hsh-w5-fSW" id="Q8C-bS-c5e"/>
+                                    <outlet property="delegate" destination="hsh-w5-fSW" id="CnO-5r-41r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GeB-LY-nGw"/>
+                    <connections>
+                        <outlet property="tableView" destination="9ki-4k-cQK" id="wCW-we-z91"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMq-4i-6pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="46"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="uMz-rm-erG">
+            <objects>
+                <viewController storyboardIdentifier="PageViewController" id="sEb-sd-lQh" customClass="PageViewController" customModule="Acoounts_For_ING" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1vj-tH-6mB"/>
+                        <viewControllerLayoutGuide type="bottom" id="8AF-wZ-6cB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yaN-g5-Tdt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGF-5b-PYW" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-702" y="37"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Xw-lE-2aq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YbH-is-aT0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uUu-GT-xmK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hsh-w5-fSW" kind="relationship" relationship="rootViewController" id="IqO-X2-XCd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDD-gb-EhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791.2" y="46.326836581709152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="98D-qw-411">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TCP-Pk-RD5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DD2-np-47Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6vL-ZZ-g7O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsB-NK-LdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_list_db-konto" width="16" height="16"/>
+    </resources>
 </document>

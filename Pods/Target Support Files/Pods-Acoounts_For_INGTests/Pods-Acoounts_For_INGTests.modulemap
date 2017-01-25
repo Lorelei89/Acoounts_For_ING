@@ -1,0 +1,6 @@
+framework module Pods_Acoounts_For_INGTests {
+  umbrella header "Pods-Acoounts_For_INGTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
